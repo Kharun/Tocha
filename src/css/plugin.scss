@@ -1,0 +1,134 @@
+.plugin {
+    padding: 90px 0 90px;
+    &__content {
+        display: flex;
+        align-items: center;
+        background: url("../img/plugin_bg.png") center/cover no-repeat;
+        border-radius: 6px;
+        padding: 16.92px 0 0 86px;
+    }
+    &__img {
+        padding-right: 80px;
+    }
+    &__items {
+        padding-bottom: 74px;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 33px;
+        line-height: 41px;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+    }
+    &__input {
+        padding: 14px 16px;
+        border-radius: 5px 0px 0px 5px;
+        border: none;
+        outline: none;
+    }
+    &__input::placeholder {
+        font-weight: 400;
+        font-size: 15px;
+        color: #474A57;
+    }
+    &__btn {
+        padding: 13px 24px;
+        font-weight: 700;
+        font-size: 14px;
+        color: #FFFFFF;
+        background: #18191F;
+        border-radius: 0px 5px 5px 0px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.br__mobile {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .plugin {
+        &__content {
+            padding: 50px;
+        }
+        padding: 54px 0 54px;
+        &__content {
+            padding: 50px 29px 0 30px;
+        }
+        &__img {
+            width: 269px;
+            height: 239px;
+            padding-right: 30px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__form {
+            flex-direction: column;
+        }
+        &__btn {
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        &__input {
+            border-radius: 5px;
+        }
+    }
+}
+
+@media (max-width: 481px) {
+    .plugin {
+        &__content {
+            padding: 40px 19px 40px 31px;
+            background: #685ED6;
+            flex-direction: column;
+        }
+        &__items {
+            padding-bottom: 0;
+        }
+        &__img {
+            padding-right: 30px;
+        }
+        &__title {
+            padding-top: 24px;
+            padding-bottom: 0;
+        }
+        &__form {
+            padding-top: 16px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .plugin {
+        &__input {
+            padding: 10px 16px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 32px;
+            br {
+                display: none;
+            }
+        }
+        &__btn {
+            margin-top: 5px;
+            padding: 12px 24px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        &__form {
+            flex-direction: column;
+        }
+        &__input {
+            border-radius: 5px;
+        }
+    }
+}

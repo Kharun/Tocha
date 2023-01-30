@@ -1,0 +1,111 @@
+.tarifs {
+    padding: 100px 0 100px;
+    text-align: center;
+    &__subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        padding: 16px 0 40px;
+    }
+    &__content {
+        display: flex;
+        column-gap: 30px;
+    }
+    &__items {
+        width: calc(33.33333% - 20px);
+        background: #FCFEFF;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+        border-radius: 6px;
+        padding-bottom: 50px;
+        button {
+            width: 287px;
+            padding: 12px 55.5px;
+        }
+        border-radius: 8px;
+    }
+    &__name {
+        font-weight: 800;
+        font-size: 24px;
+        color: #685ED6;
+        background: rgba(104, 94, 214, 0.05);
+        padding: 7px 0 6px;
+    }
+    &__text {
+        padding-top: 40px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    &__price {
+        font-weight: 500;
+        font-size: 20px;
+        padding: 32px 0 46px;
+    }
+}
+
+.mobile-slide {
+    display: none !important;
+}
+
+@media (max-width: 10000px) {
+    .tarifs__slide {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1110px) {
+    .tarifs {
+        padding: 54px 0 88px;
+        .title {
+            font-size: 32px;
+        }
+        &__content {
+            column-gap: 20px;
+        }
+        &__items__3 {
+            display: none;
+            overflow: hidden;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+        &__items {
+            width: calc(50% - 20px);
+            button {
+                font-size: 18px;
+                width: 270px;
+                padding: 12px 47px;
+            }
+        }
+        &__name {
+            font-size: 24px;
+        }
+        &__text {
+            font-size: 28px;
+        }
+        &__price {
+            font-size: 20px;
+        }
+        .swiper-slide {
+            display: block;
+        }
+    }
+    .tarifs__slide {
+        display: block !important;
+    }
+}
+
+@media (max-width: 481px) {
+    .tarifs {
+        &__items {
+            width: 100%;
+        }
+    }
+    .tarifs__items__2 {
+        display: none;
+    }
+    .mobile-slide {
+        display: block !important;
+    }
+    .tarifs__items__4 {
+        display: none;
+    }
+}

@@ -1,0 +1,145 @@
+.reviews {
+    padding: 17px 0 90px;
+    &__content {
+        display: flex;
+        column-gap: 30px;
+    }
+    &__head {
+        position: relative;
+    }
+    &__mark {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__items {
+        width: calc(50% - 15px);
+    }
+    &__item {
+        margin-top: 48px;
+        padding: 32px 32px 56px;
+        background: #FCFEFF;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+        border-radius: 6px;
+        text-align: center;
+        position: relative;
+        height: 220px;
+    }
+    &__item::before {
+        content: "";
+        position: absolute;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 50px solid #FCFEFF;
+        top: 85%;
+        z-index: 1;
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 18px;
+        color: #18191F; 
+        padding-bottom: 8px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        color: #18191F;
+    }
+    &__img__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 16px;
+    }
+    &__img {
+        padding-right: 16px;
+    }
+    &__img__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    &__img__email {
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: 140px !important;
+    left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 140px !important;
+    right: auto;
+}
+
+@media (max-width: 1110px) {
+    .reviews {
+        padding: 60px 0 86px;
+    }
+}
+
+@media (max-width: 969px) {
+    .reviews {
+        .title {
+            font-size: 32px;
+        }
+        &__name {
+            font-size: 18px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__img__name {
+            font-size: 14px;
+        }
+        &____img__email {
+            font-size: 14px;
+        }
+        &__items {
+            width: 100%;
+        }
+        &__two {
+            display: none;
+        }
+        &__item {
+            width: 540px;
+            height: 220px;
+        }
+    }
+    
+}
+
+@media (max-width: 481px) {
+    .reviews {
+        &__mark {
+            width: 54px;
+            height: 46px;
+            top: -45px;
+            right: 23px;
+        }
+        &__item {
+            width: 328px;
+            height: 282.7px;
+        }
+        &__item::before {
+            content: "";
+            position: absolute;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-top: 40px solid #ffffff;
+            top: 90%;
+            left: 140px;
+            z-index: 1;
+        }
+    }
+}

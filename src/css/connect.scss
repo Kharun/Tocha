@@ -1,0 +1,107 @@
+.connect {
+    background: url('../img/connect_bg.png') center no-repeat;
+    padding-bottom: 46px;
+    &__title {
+        text-align: center;
+        font-weight: 800;
+        font-size: 40px;
+        font-style: normal;
+    }
+    &__steps {
+        margin: 0 auto;
+        padding-top: 56px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__items {
+        text-align: center;
+    }
+    &__items:nth-child(2) {
+        padding-top: 70px;
+        img {
+            padding-top: 29.76px;
+        }
+    }
+    &__number {
+        width: 72px;
+        height: 72px;
+        background: #F1E4FF;
+        border-radius: 100px;
+        font-weight: 700;
+        font-size: 30px;
+        margin: 0 auto;
+        padding: 8px 28px;
+        color: #685ED6;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 18px;
+        padding: 16px 0 4px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &__img {
+        padding-top: 42px;
+    }
+}
+
+.connect__slide {
+    display: none !important;
+}
+
+@media (max-width: 1110px) {
+    .connect {
+        background: url("../img/connect_bg_1110.png") center no-repeat;
+        &__title {
+            font-size: 32px;
+        }
+        &__number {
+            height: 76px;
+            width: 76px;
+            font-size: 32px;
+        }
+        &__steps {
+            padding-top: 39px;
+        }
+        &__name {
+            font-size: 19px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+        &__items:nth-child(2) {
+            padding-top: 0;
+            img {
+                padding-top: 36px;
+            }
+        }
+        &__img {
+            padding-top: 36px;
+            width: 202.75px;
+            height: 417.13px;
+        }
+    }
+}
+
+@media (max-width: 481px) {
+    .connect {
+        padding: 64px 0 62px;
+    }
+    .steps__block {
+        display: none;
+    }
+    .items__2, .items__3 {
+        display: none;
+    }
+    .connect__slide {
+        display: block !important;
+        padding-top: 47px;
+        width: 100%;
+    }
+}
